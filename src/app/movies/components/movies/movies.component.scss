@@ -1,0 +1,41 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  background-color: #fff;
+}
+
+/* Estilos para o título do card */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Estilos para o conteúdo do card */
+.card-content {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.card-content p {
+  max-width: 480px;
+}
+
+/* Estilos para o rodapé do card */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+}
+
+button {
+  margin-right: 8px;
+  height: 56px;
+  width: 200px;
+  border-radius: 28px;
+}

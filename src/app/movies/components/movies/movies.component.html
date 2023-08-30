@@ -1,0 +1,20 @@
+<mat-card class="card">
+  <div class="movie-item" *ngFor="let movie of movies">
+    <mat-card-header class="card-title">
+      <mat-card-title>{{ movie.title }}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content class="card-content">
+      <p>{{ movie.overview }}</p>
+      <p>Data de Lançamento: {{ movie.release_date }}</p>
+      <p>Nota: {{ movie.vote_average }}</p>
+    </mat-card-content>
+
+    <mat-card-actions class="card-footer">
+      <button mat-fab extended color="primary">
+        <mat-icon>thumb_up</mat-icon>
+        Curtir
+      </button>
+    </mat-card-actions>
+  </div>
+</mat-card>
