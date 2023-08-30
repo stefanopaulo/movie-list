@@ -1,0 +1,7 @@
+<div class="filme-item" *ngFor="let movie of movies">
+  <h2>{{ movie.title }}</h2>
+  <p>{{ movie.overview }}</p>
+  <p>Data de Lançamento: {{ movie.release_date }}</p>
+  <p>Nota: {{ movie.vote_average }}</p>
+  <button class="botao-curtir">Curtir</button>
+</div>
