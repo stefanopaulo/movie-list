@@ -1,20 +1,24 @@
 <mat-card class="card">
-  <div class="movie-item" *ngFor="let movie of movies">
-    <mat-card-header class="card-title">
-      <mat-card-title>{{ movie.title }}</mat-card-title>
-    </mat-card-header>
+  <mat-card-header class="card-title">
+    <mat-card-title>Lista com os 10 filmes mais populares no Brasil</mat-card-title>
+    <mat-card-subtitle>Filmes mais populares do Brasil listados segundo a API do TMDB</mat-card-subtitle>
+  </mat-card-header>
 
-    <mat-card-content class="card-content">
-      <p>{{ movie.overview }}</p>
-      <p>Data de Lançamento: {{ movie.release_date }}</p>
-      <p>Nota: {{ movie.vote_average }}</p>
-    </mat-card-content>
+  <div class="content">
+    <div class="movie-item" *ngFor="let movie of movies">
+      <mat-card-content class="card-content">
+        <h2>{{ movie.title }}</h2>
+        <p>{{ movie.overview }}</p>
+        <p>Data de Lançamento: {{ movie.release_date }}</p>
+        <p>Nota: {{ movie.vote_average }}</p>
+      </mat-card-content>
 
-    <mat-card-actions class="card-footer">
-      <button (click)="likeMovie(movie.id)" mat-fab extended color="primary">
-        <mat-icon>thumb_up</mat-icon>
-        Curtir
-      </button>
-    </mat-card-actions>
+      <mat-card-actions class="card-footer">
+        <button (click)="likeMovie(movie.id)" mat-fab extended color="primary">
+          <mat-icon>thumb_up</mat-icon>
+          Curtir
+        </button>
+      </mat-card-actions>
+    </div>
   </div>
 </mat-card>
