@@ -21,10 +21,10 @@ export class MoviesComponent implements OnInit {
   likeMovie(movieId: string) {
     this.movieLikesService.likeMovie(movieId).subscribe(
       (response) => {
-        console.log(`Movie liked! New likes count: ${response.likes}`);
+        console.log(`Curtidas: ${response.likes}`);
       },
       (error) => {
-        console.error('An error occurred while liking the movie:', error);
+        console.error('Um erro ocorreu ao curtir o filme:', error);
       }
     );
   }
