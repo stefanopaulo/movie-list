@@ -11,7 +11,7 @@
     </mat-card-content>
 
     <mat-card-actions class="card-footer">
-      <button mat-fab extended color="primary">
+      <button (click)="likeMovie(movie.id)" mat-fab extended color="primary">
         <mat-icon>thumb_up</mat-icon>
         Curtir
       </button>
